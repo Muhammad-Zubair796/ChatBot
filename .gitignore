@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment files
+.env
+*.env
+
+# Streamlit specific
+.streamlit/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# VS Code / IDE stuff
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Render build artifacts
+.render/

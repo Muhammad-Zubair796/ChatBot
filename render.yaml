@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: zubigpt
+    env: python
+    plan: free
+    region: oregon  # or choose closest region
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port 10000 --server.address 0.0.0.0
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: HF_TOKEN
+        sync: false
+      - key: LANGCHAIN_API_KEY
+        sync: false
